@@ -1,0 +1,413 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.poppins {
+   font-family: "Poppins", sans-serif;
+}
+/* fonts */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+body {
+   overflow-x: hidden;
+   color: white !important;
+}
+
+p {
+   margin: 0 !important; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin: 0;
+}
+
+/* Comman css */
+.btn-white {
+   background-color: white;
+   border-radius: 20px;
+}
+
+h2 {
+   overflow-y: hidden;
+}
+
+.btn-white:hover {
+   background-color: white;
+   border-radius: 20px;
+}
+
+.text-gradiant {
+   background: linear-gradient(to right, #cc46ff 0%, #4659ff 100%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.py-100 {
+   padding: 100px 0px;
+}
+
+.bg-gradiant {
+   background: linear-gradient(to right, #cc46ff 0%, #4659ff 100%);
+}
+
+.bg-light-black {
+   background-color: #16191C;
+}
+
+.bg-blue {
+   background-color: #4659ff;
+}
+
+/* Comman css */
+.text-purpal{color: #cc46ff !important;
+   font-size: 45px !important;}
+.header-bg {
+   background-image: url(../img/header-bg.webp);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* .bg-color{background-color: #4659ff; height: 20px; width: 20px;} */
+
+/* -----------------------------------------------------------------------------section 1 */
+.sec1-bg {
+   background-image: url(../img/hero-bg.webp);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.btn-gradiant {
+   /* background-color: transparent; */
+}
+
+.btn-gradiant {
+   background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+   border-radius: 50px !important;
+   border: none;
+   color: #FFFFFF !important;
+   text-transform: capitalize;
+   text-decoration: none;
+   transform: scale(1);                 
+   transition: 0.3s;
+   padding: 10px 30px;
+   color: #2C2E30;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   transition: .5s all;
+}
+
+.btn-gradiant:hover {
+   transform: scale(1.03) !important;
+   transition: 0.3s !important;
+}
+
+a {
+   text-decoration: none;
+   display: inline-block;
+}
+
+.absolute-shap1 {
+   position: absolute;
+   right: 0;
+   top: 0;
+   width: 30% !important;
+}
+
+.absolute-shap2 {
+   position: absolute;
+   left: 0px;
+   bottom: -250px;
+   width: 20% !important;
+   z-index: 10;
+}
+
+/* moving shape */
+.wawe-area {
+   height: 100px;
+   width: 100%;
+}
+
+.wawe-shape {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   animation: slide 10s linear infinite;
+}
+
+.wawe-shape::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   transform: translateX(-100%);
+   /* display: flex; */
+   height: 100%;
+   width: 100%;
+   background-image: url("../img/wawe-shape.webp");
+   background-position: center center;
+   background-size: 100% 100%;
+}
+
+@keyframes slide {
+   from {
+      transform: translateX(0);
+   }
+
+   to {
+      transform: translateX(100%);
+   }
+}
+
+/* -----------------------------------------------------------------------------section 1 */
+
+/* -----------------------------------------------------------------------------section 3 */
+
+.sec3 .col {
+   text-align: start;
+}
+
+/* -----------------------------------------------------------------------------section 3 */
+
+/* hero sec slidding text */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+body{
+ 	margin:0;
+ 	font-family: 'Times new roman', sans-serif;
+ 	font-weight: 400;
+}
+
+* {
+ 	box-sizing: border-box;
+}
+
+.animate-text {
+  height: 46px;
+  overflow: hidden;
+}
+h2{
+   line-height: 46px;
+
+}
+.animate-text span{
+    font-size: 36px;
+    color:#ffffff;
+    font-weight: 700;
+    line-height: 46px;
+    display: none;
+}
+
+.animate-text span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+.animate-text span.text-out{
+	animation: textOut 1s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+
+/* hero sec slidding text */
+
+
+.shadow1 {
+   text-align: center;
+   background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+   padding: 2px;
+   height: 100%;
+   border-radius: 20px;
+}
+
+.shadow2 {
+   background-color: #000;
+   height: 100%;
+   border-radius: 20px;
+   position: relative;
+   z-index: 2;
+   padding: 20px;
+}
+
+.main-shadow {
+   background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+   border-radius: 20px;
+   position: absolute;
+   height: calc(100% - 50px);
+   width: calc(100% - 20px);
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transition: 0.3s;
+}
+
+.sec7 .row .col {
+   position: relative;
+   padding: 0 25px;
+}
+
+.sec7 .row .col:hover .main-shadow {
+   height: calc(100% + 30px);
+}
+
+/* sec7 using before after */
+
+/* .shadow1{
+   text-align: center;
+   background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+   padding: 2px;
+   height: 100%;
+   border-radius: 20px;
+   position: relative;
+}
+.shadow2{
+   background-color: #000;
+   height: 100%;
+   border-radius: 20px;
+   position: relative !important;
+   padding: 20px;
+   z-index: 1 !important;
+}
+
+.shadow1::before{
+   content: "";
+   background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   transition: 0.3s;
+   height: calc(100% - 50px);
+   width: calc(100% + 20px);
+   position: absolute !important;
+   z-index: 0 !important;
+   border-radius: 20px;
+}
+
+.sec7 .row .col:hover .shadow1::before{
+   height: calc(100% + 20px);
+} */
+
+.num-bg {
+   background: linear-gradient(90deg, #cc46ff 0%, #4659ff 100%);
+   height: 60px;
+   width: 60px;
+
+   border-radius: 8px;
+   padding: 2px;
+}
+
+.num-bg>div {
+   background-color: #000;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 15px;
+
+}
+
+/* section 13 */
+
+#sec13-accoid .accordion-item,
+.accordion-button {
+   background-color: transparent !important;
+   border: none;
+   color: white !important;
+}
+
+.accordion {
+   --bs-accordion-border-color: none;
+}
+
+.accordion-button::after {
+   background-image: url(../img/down\ arroew.svg) !important;
+}
+
+.num-box {
+   height: 30px;
+   width: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border-radius: 5px;
+   margin-right: 15px;
+   font-size: 20px !important;
+   font-weight: 600;
+}
+
+#sec13-accoid .accordion-item,
+.accordion-button p {
+   font-size: 20px;
+   font-weight: 600;
+   
+}
+
+.num-box span {
+   background: linear-gradient(to right, #cc46ff 0%, #4659ff 100%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#sec13-accoid .accordion-body {
+   padding-left: 65px;
+}
+
+.sec13-leborder::before {
+   content: "";
+   height: 100%;
+   width: 3px;
+   background-color: #393939;
+   position: absolute;
+   top: 43px;
+   left: 33px;
+}
+
+.sec13-leborder:last-child::before {
+   width: 0;
+}
+
+.accordion-button:not(.collapsed) p{
+   background: linear-gradient(to right, #cc46ff 0%, #4659ff 100%);
+   -webkit-background-clip: text ;
+   background-clip: text ;
+   -webkit-text-fill-color: transparent;
+}
+
+.accordion-button:not(.collapsed) div{
+   background: linear-gradient(to right, #cc46ff 0%, #4659ff 100%);
+}
+
+.accordion-button:not(.collapsed) div span{
+   background: linear-gradient(to right, #ffffff 0%, #ffffff 100%) ;
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.accordion-button{box-shadow: none !important;}
+/* section 13 */
